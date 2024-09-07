@@ -1,3 +1,3 @@
 <template>
-  <div class="m-100px text-green">Hello World!</div>
+  <div m-1 text="green bold">Hello World!</div>
 </template>
