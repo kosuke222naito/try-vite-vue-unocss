@@ -21,6 +21,9 @@ importers:
       '@iconify-json/devicon':
         specifier: ^1.1.50
         version: 1.1.50
+      '@iconify-json/mi':
+        specifier: ^1.1.9
+        version: 1.1.9
       '@rushstack/eslint-patch':
         specifier: ^1.8.0
         version: 1.10.4
@@ -530,6 +533,9 @@ packages:
 
   '@iconify-json/devicon@1.1.50':
     resolution: {integrity: sha512-OPW1BoRu7QaOmLdmG/TxNAB0m5ltxiggaUrtzMVJv6GhPoygJVme1vsLr3p2sN7KngmVdZZEOMKqq5+Nb5NVxg==}
+
+  '@iconify-json/mi@1.1.9':
+    resolution: {integrity: sha512-+1Mn8V721cNZwinl6ZOiJtRXOQXMdbZIHm5kiG9ZRMZ9ZMqLWJshTYYuABifG7mNdZIUTUwfC39vp3OK5woQ5Q==}
 
   '@iconify/types@2.0.0':
     resolution: {integrity: sha512-+wluvCrRhXrhyOmRDJ3q8mux9JkKy5SJ/v8ol2tu4FVjyYvtEzkc/3pK15ET6RKg4b4w4BmTk1+gsCUhf21Ykg==}
@@ -2183,6 +2189,10 @@ snapshots:
       '@iconify/types': 2.0.0
 
   '@iconify-json/devicon@1.1.50':
+    dependencies:
+      '@iconify/types': 2.0.0
+
+  '@iconify-json/mi@1.1.9':
     dependencies:
       '@iconify/types': 2.0.0
 
