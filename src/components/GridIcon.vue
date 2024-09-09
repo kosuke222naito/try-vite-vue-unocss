@@ -10,6 +10,7 @@ const props = defineProps<{
 const borderClass = computed(() => {
   return props.borderColor || "border-gray";
 });
+
 const iconClass = computed(() => {
   return props.icon || "i-logos-vue";
 });
