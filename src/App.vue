@@ -3,15 +3,18 @@ import { ref } from "vue";
 
 import GridLayout from "./components/GridLayout.vue";
 import GridIcon from "./components/GridIcon.vue";
-import Navbar from "./components/Navbar.vue";
+import NavBar from "./components/NavBar.vue";
 
 const isDark = ref(false);
 
-const toggleDarkMode = () => {
-  isDark.value = !isDark.value;
+const toggleDarkMode = () => (isDark.value = !isDark.value);
+
+type Item = {
+  borderColor: string;
+  icon: string;
 };
 
-const items = [
+const items: Item[] = [
   { borderColor: "border-red", icon: "i-carbon-logo-github" },
   { borderColor: "border-orange", icon: "i-carbon-logo-vue" },
   { borderColor: "border-yellow", icon: "i-twemoji-frog" },
@@ -26,7 +29,7 @@ const items = [
 
 <template>
   <div :class="{ 'bg-black': isDark }">
-    <Navbar :isDark @toggleDarkMode="toggleDarkMode"> </Navbar>
+    <NavBar :isDark @toggleDarkMode="toggleDarkMode"> </NavBar>
     <GridLayout
       :gap="'x-8 y-8'"
       :columnsLg="'lg:grid-cols-4'"
