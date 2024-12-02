@@ -5,9 +5,7 @@ const props = defineProps<{
   isDark: boolean;
 }>();
 
-const emit = defineEmits<{
-  toggleDarkMode: [];
-}>();
+const emit = defineEmits<{ toggleDarkMode: [] }>();
 
 const emitToggleDarkMode = () => {
   emit("toggleDarkMode");
