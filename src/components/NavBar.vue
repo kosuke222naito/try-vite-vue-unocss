@@ -6,7 +6,7 @@ const props = defineProps<{
 }>();
 
 const emit = defineEmits<{
-  (event: "toggleDarkMode"): void;
+  toggleDarkMode: [];
 }>();
 
 const emitToggleDarkMode = () => {
